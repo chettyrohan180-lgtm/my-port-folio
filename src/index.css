@@ -1,0 +1,310 @@
+/* ==========================================================================
+   DESIGN SYSTEM & THEME TOKENS - GLASSMORPHIC DARK MODE
+   ========================================================================== */
+
+:root {
+  /* Color Palette - HSL Tailored Dark Theme */
+  --bg-primary: #090D16;
+  --bg-secondary: #0F172A;
+  --bg-tertiary: #1E293B;
+
+  --surface-card: rgba(15, 23, 42, 0.65);
+  --surface-card-hover: rgba(30, 41, 59, 0.85);
+  --surface-glass: rgba(255, 255, 255, 0.03);
+  --surface-glass-hover: rgba(255, 255, 255, 0.07);
+
+  /* Primary Accent - Electric Indigo / Violet */
+  --accent-primary: #6366F1;
+  --accent-primary-hover: #4F46E5;
+  --accent-primary-glow: rgba(99, 102, 241, 0.35);
+
+  /* Secondary Accent - Emerald / Cyan */
+  --accent-secondary: #10B981;
+  --accent-secondary-glow: rgba(16, 185, 129, 0.3);
+
+  /* Tertiary Accent - Rose / Magenta */
+  --accent-tertiary: #F43F5E;
+  --accent-tertiary-glow: rgba(244, 63, 94, 0.3);
+
+  /* Text Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-accent: #818CF8;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --border-highlight: rgba(99, 102, 241, 0.4);
+
+  /* Typography Fonts */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows & Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 35px var(--accent-primary-glow);
+  --shadow-glow-emerald: 0 0 35px var(--accent-secondary-glow);
+
+  /* Glassmorphism Blur */
+  --backdrop-blur: blur(16px);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transition Durations */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Custom Selection */
+::selection {
+  background: var(--accent-primary-glow);
+  color: var(--text-primary);
+}
+
+/* Container Utility */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section Wrapper */
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 50%, #6366F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-emerald {
+  background: linear-gradient(135deg, #FFFFFF 0%, #6EE7B7 50%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+/* Glassmorphism Card Component */
+.glass-card {
+  background: var(--surface-card);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.glass-card:hover {
+  border-color: var(--border-highlight);
+  background: var(--surface-card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+/* Interactive Pill Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  background: rgba(99, 102, 241, 0.12);
+  color: #A5B4FC;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  transition: var(--transition-fast);
+}
+
+.badge:hover {
+  background: rgba(99, 102, 241, 0.22);
+  border-color: var(--accent-primary);
+}
+
+.badge-emerald {
+  background: rgba(16, 185, 129, 0.12);
+  color: #6EE7B7;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* Buttons System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.975rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #4F46E5 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px var(--accent-primary-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.5);
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background: var(--surface-glass);
+  color: var(--text-primary);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: var(--backdrop-blur);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-glass-hover);
+  border-color: var(--border-highlight);
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: var(--radius-md);
+  background: var(--surface-glass);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  transition: var(--transition-normal);
+}
+
+.btn-icon:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Background Ambient Glow Orbs */
+.bg-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-glow-indigo {
+  width: 500px;
+  height: 500px;
+  background: rgba(99, 102, 241, 0.15);
+  top: -100px;
+  right: -100px;
+}
+
+.bg-glow-emerald {
+  width: 400px;
+  height: 400px;
+  background: rgba(16, 185, 129, 0.12);
+  bottom: 10%;
+  left: -100px;
+}
+
+/* Keyframe Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
