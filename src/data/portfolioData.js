@@ -6,7 +6,7 @@ export const developerInfo = {
   bio: "Passionate 2nd Year Computer Science student specializing in AI & Machine Learning. Focused on computer vision, deep learning frameworks, data structures & algorithms, and modern full-stack web development.",
   socials: {
     github: "https://github.com/chettyrohan180-lgtm",
-    linkedin: "https://linkedin.com/in/rohan-ch",
+    linkedin: "https://www.linkedin.com/in/rohan-chetty/",
     twitter: "https://twitter.com/rohanchetty_dev",
     email: "chettyrohan180@gmail.com"
   },

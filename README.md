@@ -60,7 +60,7 @@ The production bundle will be generated in the `dist/` directory.
 
 - **Email**: chettyrohan180@gmail.com
 - **GitHub**: [@chettyrohan180-lgtm](https://github.com/chettyrohan180-lgtm)
-- **LinkedIn**: [Rohan Chetty](https://linkedin.com/in/rohan-ch)
+- **LinkedIn**: [Rohan Chetty](https://www.linkedin.com/in/rohan-chetty/)
 
 ---
 
