@@ -1,4 +1,4 @@
-# ⚡ Rohan Chetty - Developer Portfolio
+# Rohan Chetty - Developer Portfolio
 
 > **AI & ML Engineer | Full-Stack Developer | 2nd Year B.Tech CSE (AI & ML)**
 
@@ -6,18 +6,18 @@ A modern, high-performance developer portfolio built with **React 18**, **Vite**
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎨 **Glassmorphic UI**: Sleek dark mode design with HSL glow accents, micro-animations, and dynamic glass cards.
-- 🚀 **High Performance**: Built with Vite for sub-second development builds and optimized asset bundling.
-- 📱 **Fully Responsive**: Mobile-first responsive layout tailored across desktop, tablet, and mobile displays.
-- 🛠️ **Curated Skill Matrix**: Categorized tech stack covering Python, C/C++, Java, PyTorch, Scikit-Learn, React, FastAPI, SQL, and Docker.
-- 📂 **Interactive Project Showcase**: Category filtering, live demo links, and detailed modal popups with system architectures.
-- ✉️ **Contact Form**: Glassmorphic form UI with client-side validation and quick social links.
+- **Glassmorphic UI**: Sleek dark mode design with HSL glow accents, micro-animations, and dynamic glass cards.
+- **High Performance**: Built with Vite for sub-second development builds and optimized asset bundling.
+- **Fully Responsive**: Mobile-first responsive layout tailored across desktop, tablet, and mobile displays.
+- **Curated Skill Matrix**: Categorized tech stack covering Python, C/C++, Java, PyTorch, Scikit-Learn, React, FastAPI, SQL, and Docker.
+- **Interactive Project Showcase**: Category filtering, live demo links, and detailed modal popups with system architectures.
+- **Contact Form**: Glassmorphic form UI with client-side validation and quick social links.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18, Vite, Vanilla CSS (Design Tokens & Utility Classes), Lucide Icons
 - **Core Languages**: Python, C / C++, Java, JavaScript, TypeScript, SQL
@@ -26,15 +26,15 @@ A modern, high-performance developer portfolio built with **React 18**, **Vite**
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 ### Prerequisites
 Make sure you have **Node.js** (v16+ recommended) installed.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/chettyrohan180-lgtm/PORTFOLIO.git
-cd PORTFOLIO
+git clone https://github.com/chettyrohan180-lgtm/my-port-folio.git
+cd my-port-folio
 ```
 
 ### 2. Install Dependencies
@@ -56,7 +56,7 @@ The production bundle will be generated in the `dist/` directory.
 
 ---
 
-## 📬 Contact & Connect
+## Contact & Connect
 
 - **Email**: chettyrohan180@gmail.com
 - **GitHub**: [@chettyrohan180-lgtm](https://github.com/chettyrohan180-lgtm)
@@ -64,4 +64,4 @@ The production bundle will be generated in the `dist/` directory.
 
 ---
 
-⭐ *Built by Rohan Chetty — 2nd Year B.Tech CSE (AI & ML)*
+*Built by Rohan Chetty — 2nd Year B.Tech CSE (AI & ML)*
